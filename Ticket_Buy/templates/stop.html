@@ -104,11 +104,9 @@
 <body>
 	<div class="container">
 		<h1>LiverPool</h1>
-		<form method="POST" action="{% url 'Liver_pool_Sel' %}">
+		<form method="POST" action="{% url 'Stop_pool' %}">
 			{% csrf_token %}
-			<label for="my-input"><i class="fas fa-link"></i> Enter your Liverpool link:</label>
-			<input type="text" name="my-data" id="my-input" placeholder="https://...">
-			<button type="submit" name="action" value="start"><i class="fas fa-arrow-right"></i> Start Selenium</button>
+            <button type="submit" name="action" value="stop"><i class="fas fa-stop"></i> Stop Selenium</button>
 		</form>
 	</div>
 	<div class="footer">

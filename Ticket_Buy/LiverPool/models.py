@@ -6,4 +6,10 @@ class TicketDetail(models.Model):
     ticket = models.CharField(max_length=200, null=True)
     
     class Meta:
-            verbose_name = "Ticket List"    
+            verbose_name = "Ticket List" 
+
+class sel(models.Model):
+    Selnium = models.CharField(max_length=200, null=True)
+    
+    class Meta:
+            verbose_name = "Selenium"                
